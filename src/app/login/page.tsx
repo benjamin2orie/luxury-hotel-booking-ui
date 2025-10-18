@@ -27,7 +27,7 @@ const FanObject: FanProps[] = [
   { id: 8, icon: <BiLike />, name: 'Celebratory Treat' },
 ];
 
-const page: React.FC = () => {
+const Page= () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState(false);
@@ -72,6 +72,7 @@ const page: React.FC = () => {
       setSuccess(true);
     } catch (err) {
       setError('faild');
+      console.log(err);
     } finally {
       setLoading(false);
     }
@@ -204,4 +205,4 @@ const page: React.FC = () => {
   );
 };
 
-export default page;
+export default Page;

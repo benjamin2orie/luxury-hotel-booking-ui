@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '@/components/Header';
 import Language from '@/components/Language';
 
-const page = () => {
+const Page = () => {
   return (
     <div>
       <Language />
@@ -12,4 +12,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

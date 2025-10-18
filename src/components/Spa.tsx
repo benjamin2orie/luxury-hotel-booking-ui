@@ -1,6 +1,6 @@
 'use client';
 import { useState, useMemo, useEffect } from 'react';
-import { Tabs, Button } from 'antd';
+import {Button } from 'antd';
 import { LeftOutlined, RightOutlined } from '@ant-design/icons';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';

@@ -1,15 +1,17 @@
 
 import React from 'react';
 
-interface DrawerButtonProps extends React.PropsWithChildren<{}> {
-    className?: string;  
+interface DrawerButtonProps  {
+  className?: string;  
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
+  children?: React.ReactNode;
 }
 
-const DrawerButton: React.FC<DrawerButtonProps> = ({ children, onClick,className }) => {
+const DrawerButton = ({ children, onClick,className }:DrawerButtonProps) => {
   return <button
     className={className}
-   onClick={onClick}>{children}</button>;
+   onClick={onClick}>{children}
+   </button>;
 }
 
 export default DrawerButton;

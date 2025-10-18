@@ -9,7 +9,7 @@ import { IoEyeOffOutline } from 'react-icons/io5';
 import { FiEye } from 'react-icons/fi';
 import { IoChevronDown } from 'react-icons/io5';
 
-const page = () => {
+const Page = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState(false);
@@ -86,9 +86,11 @@ const page = () => {
       }
 
       const result = await response.json();
+      console.log(result)
       setSuccess(true);
     } catch (err) {
       setError('faild');
+      console.log(err);
     } finally {
       setLoading(false);
     }
@@ -358,4 +360,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

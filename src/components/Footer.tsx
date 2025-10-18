@@ -75,7 +75,7 @@ const Footer = () => {
         <div className={`${isAllowedRoute ? "border-l border-[#404040] pl-3" : ""}`}>
           <h2 className="text-[#C8803C]">Contactus</h2>
           <p>
-            Reach out to us at Haus—we're here to assist with any inquiries or to tailor your
+            Reach out to us at Haus—we are here to assist with any inquiries or to tailor your
             experience for an unparalleled stay.
           </p>
 

@@ -19,7 +19,7 @@ const MenuDrawer: React.FC = ({children}:MenuDrawerPropss) => {
 
   const [location, setLocation] = useState<string | null>(null);
   const [services, setServices] = useState<string | null>(null);
-  const [guests, setGuests] = useState<number | null>(null);
+  // const [guests, setGuests] = useState<number | null>(null);
   //   const [dates, setDates] = useState<[Dayjs, Dayjs] | null>(null);
 
   const showDrawer = () => setOpen(true);
@@ -38,10 +38,10 @@ const MenuDrawer: React.FC = ({children}:MenuDrawerPropss) => {
     setOpen(false);
   };
 
-  const handleGuestsSelect = (value: number) => {
-    setGuests(value);
-    setRightDrawerOpen(false);
-  };
+  // const handleGuestsSelect = (value: number) => {
+  //   setGuests(value);
+  //   setRightDrawerOpen(false);
+  // };
 
   //   const handleConfirmBooking = () =>{
   //     console.log({location, services, guests, dates});

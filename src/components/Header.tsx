@@ -7,8 +7,8 @@ import Link from 'next/link';
 import SModal from './modal/SModal';
 import { usePathname } from 'next/navigation';
 import MenuDrawer from './drawers/MenuDrawer';
-import DrawerButton from './DrawerButton';
-import ConfirmBookingDrawer from './drawers/ConfirmBookingDrawer';
+// import DrawerButton from './DrawerButton';
+// import ConfirmBookingDrawer from './drawers/ConfirmBookingDrawer';
 
 
 const Header = () => {
